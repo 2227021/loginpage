@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> MY FIRST HTML</tittle>
+    </head>
+    <body bgcolor="lightskyblue"> 
+        <article>
+            <div class=" center"> WELCOME</div>
+
+             
+         <fieldset>    
+            <legend>Personal Info </legend>
+          <h1> LOGIN USER</h1>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" required>
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required>
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required>
+          </p>
+          <p>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" id="Gender" required  list="Gender">
+            <datalist id="Gender">
+                    <option value="Male">
+                    <option value="Female">
+                    <option value="Others">               
+            </datalist>
+         </p>
+          <p>
+            <label for="degree">Degree:</label>
+            <input type="text" name="degreee" id="degree" required list="degree">
+            <datalist id="degree">
+                    <option value="SSLC">
+                    <option value="HSC">
+                    <option value="Diploma"> 
+                    <option value="Bsc.">
+                    <option value="Msc.">
+                    <option value="BE.">
+                    <option value="ME.">               
+            </datalist>   
+          </p>
+          <p>
+            <label for="email">Email Id:</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <label for="showpassword">Show Password:</label>
+             <script>
+              document.getElementsById('showpassword').onclick = function() {
+                 if (this.checked) {
+                   document.getElementsById('password').type = "text";                  
+                 } else {
+                   document.getElementsById('password').type ="password";
+                 }
+                
+              };
+             </script>
+          </p>
+          <p>
+            <label for=" re-password"> Re-Password:</label>
+            <input type="password" name="re-password" id="re-password">
+          </p>
+
+          <p>
+            <label for="phone">Phone NO.:</label>
+            <input type="tel" name="phone" id="phone">
+          </p>
+
+          <p>
+            <label for="submit">Password:</label>
+            <input type="button" name="submit" id="submit">
+          </p>
+
+    
+         </fieldset>
+        </article>
+    </body>
+</html>   
+
